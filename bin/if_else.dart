@@ -2,30 +2,30 @@ import 'dart:io';
 
 void main(){
 
-  // int? marks;
-  // stdout.write('Enter a Number : ');
-  // marks = int.parse(stdin.readLineSync()!) ;
-  // if (101 > marks && marks > 79 ){
-  //   print("A+");
-  // }
-  // else if (80 > marks && marks > 69){
-  //   print('A');
-  // }
-  // else if (70 > marks && marks > 59){
-  //   print('A-');
-  // }
-  // else if (60 > marks && marks > 49){
-  //   print('B');
-  // }
-  // else if (50 > marks && marks > 39){
-  //   print('C');
-  // }
-  // else if (40 > marks && marks > 32){
-  //   print('D');
-  // }
-  // else{
-  //   print('Result Not Found');
-  // }
+  int? marks;
+  stdout.write('Enter a Number : ');
+  marks = int.parse(stdin.readLineSync()!) ;
+  if (101 > marks && marks > 79 ){
+    print("A+");
+  }
+  else if (80 > marks && marks > 69){
+    print('A');
+  }
+  else if (70 > marks && marks > 59){
+    print('A-');
+  }
+  else if (60 > marks && marks > 49){
+    print('B');
+  }
+  else if (50 > marks && marks > 39){
+    print('C');
+  }
+  else if (40 > marks && marks > 32){
+    print('D');
+  }
+  else{
+    print('Result Not Found');
+  }
 
 
   double? salary;

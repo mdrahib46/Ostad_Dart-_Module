@@ -33,7 +33,6 @@ void main(){
   Basic Salary <= 20000 : HRA = 25%, DA = 90%
   Basic Salary > 20000 : HRA = 30%, DA = 95%
   */
-
   double? salary;
   double? hra;
   double? da;
@@ -56,6 +55,6 @@ void main(){
     da = salary * 0.95;
     gross = salary+hra+da;
   }
-  print("Your gross salary = $gross");
+  print("Your gross salary = ${gross.toStringAsFixed(2)}");
 
 }

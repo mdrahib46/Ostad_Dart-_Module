@@ -8,21 +8,28 @@ void main(){
   stdout.write('Enter Student Name : ');
   inputStudentName =stdin.readLineSync()!;
 
-  /// User input for test score
+  /// User input for test score.
   stdout.write('Enter Student\'s testScore : ');
   inputTestScore = int.parse(stdin.readLineSync()!) ;
 
-  /// called function
+  /// called function with user Input.
   var output = studentGrade(inputStudentName, inputTestScore);
   print(output);
 
+  print('\nExample 2 User without input');
+
+  /// Called function without user input
+  String stdName = "Md Monirujjaman Nahid";
+  int score = 89;
+  var output2 = studentGrade(stdName, score);
+  print(output2);
 }
 
 
-/// Create a function to calculate student grade
+/// Create a function to calculate student grade.
 String studentGrade(studentName, testScore){
 
-  /// created a variable to store grades in a single point
+  /// created a variable to store grades in a single point.
   String? grade;
 
   if (100 >= testScore && testScore >= 90 ){

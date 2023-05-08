@@ -13,13 +13,14 @@ void main(){
   inputTestScore = int.parse(stdin.readLineSync()!) ;
 
   /// called function
-  studentGrade(inputStudentName, inputTestScore);
+  var output = studentGrade(inputStudentName, inputTestScore);
+  print(output);
 
 }
 
 
 /// Create a function to calculate student grade
-studentGrade(studentName, testScore){
+String studentGrade(studentName, testScore){
 
   /// created a variable to store grades in a single point
   String? grade;
@@ -42,6 +43,6 @@ studentGrade(studentName, testScore){
   else{
     grade ='Invalid Grade..!';
   }
-  print('$studentName\'s grade : $grade');
+  return('$studentName\'s grade : $grade');
 
 }

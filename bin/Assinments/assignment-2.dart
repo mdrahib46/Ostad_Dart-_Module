@@ -1,11 +1,19 @@
 import 'dart:io';
 void main(){
 
+  /// Called function without user input
+  String stdName = "Md Monirujjaman Nahid";
+  int score = 89;
+  var output1 = studentGrade(stdName, score);
+  print(output1);
+
+  print('\nExample 2 User without input\n-------------------------');
+
   int? inputTestScore;
   String? inputStudentName;
 
   /// User input for student name
-  stdout.write('Enter Student Name : ');
+  stdout.write('Enter another Student Name : ');
   inputStudentName =stdin.readLineSync()!;
 
   /// User input for test score.
@@ -13,16 +21,12 @@ void main(){
   inputTestScore = int.parse(stdin.readLineSync()!) ;
 
   /// called function with user Input.
-  var output = studentGrade(inputStudentName, inputTestScore);
-  print(output);
-
-  print('\nExample 2 User without input');
-
-  /// Called function without user input
-  String stdName = "Md Monirujjaman Nahid";
-  int score = 89;
-  var output2 = studentGrade(stdName, score);
+  var output2 = studentGrade(inputStudentName, inputTestScore);
   print(output2);
+
+
+
+
 }
 
 

@@ -13,11 +13,11 @@ void main(){
   String? inputStudentName;
 
   /// User input for student name
-  stdout.write('Enter another Student Name : ');
+  stdout.write('Enter Student Name : ');
   inputStudentName =stdin.readLineSync()!;
 
   /// User input for test score.
-  stdout.write('Enter Student\'s testScore : ');
+  stdout.write('Enter another Student\'s testScore : ');
   inputTestScore = int.parse(stdin.readLineSync()!) ;
 
   /// called function with user Input.

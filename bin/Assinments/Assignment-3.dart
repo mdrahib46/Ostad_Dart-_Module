@@ -12,11 +12,11 @@ void main() {
 
   // Car suzuki =
 
-  print("Car 1: \n Brand:${bmw.getBrand()} ,Model: ${bmw.getModel()}, Launched: ${bmw.getYear()}, ${bmw.getMilesDriven()} miles driven, ${bmw.getAge()} years old");
+  print("Car 1: \nBrand:${bmw.getBrand()} ,Model: ${bmw.getModel()}, Launched: ${bmw.getYear()}, ${bmw.getMilesDriven()} miles driven, ${bmw.getAge()} years old");
 
-  print("Car 2: \n Brand:${toyota.getBrand()}, Model: ${toyota.getModel()}, Launched: ${toyota.getYear()} ${toyota.getMilesDriven()} miles driven, ${toyota.getAge()} years old");
+  print("Car 2: \nBrand:${toyota.getBrand()}, Model: ${toyota.getModel()}, Launched: ${toyota.getYear()} ${toyota.getMilesDriven()} miles driven, ${toyota.getAge()} years old");
 
-  print("Car 3: \n Brand:${ford.getBrand()}, Model: ${ford.getModel()}, Launched: ${ford.getYear()}, ${ford.getMilesDriven()} miles driven, ${ford.getAge()} years old");
+  print("Car 3: \nBrand:${ford.getBrand()}, Model: ${ford.getModel()}, Launched: ${ford.getYear()}, ${ford.getMilesDriven()} miles driven, ${ford.getAge()} years old");
 
   print("Total number of cars created: ${Car.numberOfCars}");
 }

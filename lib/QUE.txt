@@ -1,22 +1,32 @@
-Create a class Car with the following properties:
-● brand: a string representing the brand of the car
-● model: a string representing the model of the car
-● year: an integer representing the year the car was made
-● milesDriven: a double representing the number of miles driven by the car
-The class should have the following methods:
+Define an abstract class Account with the following properties:
+● accountNumber (integer)
+● balance (double)
+It should also have the following methods:
+● deposit(double amount): Adds the specified amount to the account balance.
 
-● drive(double miles): a method that takes a double parameter representing the
-number of miles driven and adds it to the milesDriven property
-
-● getMilesDriven(): a method that returns the value of the milesDriven property
-
-● getBrand(): a method that returns the value of the brand property
-● getModel(): a method that returns the value of the model property
-● getYear(): a method that returns the value of the year property
+● withdraw(double amount): Abstract method that deducts the specified amount from
+the account balance.
 
 
-● getAge(): a method that returns the age of the car (i.e. the difference between the
-current year and the year property)
-★ The class should also have a static property called numberOfCars that keeps track
-of the number of Car objects that have been created. This property should be
-incremented every time a Car object is created.
+Define a class SavingsAccount that extends the Account class. It should have an additional
+property called interestRate (double).
+Implement the withdraw() method in the SavingsAccount class as follows:
+● Subtract the specified amount from the account balance.
+● Apply the interest rate to the remaining balance.
+
+
+Define a class CurrentAccount that extends the Account class. It should have an
+additional property called overdraftLimit (double).
+Implement the withdraw() method in the CurrentAccount class as follows:
+● Allow withdrawals up to the overdraft limit.
+● If the withdrawal amount exceeds the overdraft limit, print a message indicating
+insufficient funds.
+
+
+In main()
+● Create an instance of the SavingsAccount class by providing values for the account
+number, initial balance, and interest rate.
+● Use the instance to perform operations like depositing and withdrawing money.
+● Create an instance of the CurrentAccount class by providing values for the account
+number, initial balance, and overdraft limit.
+● Use the instance to perform operations like depositing and withdrawing.

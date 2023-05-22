@@ -1,3 +1,4 @@
+/// An abstract class.
 abstract class Account{
   int accountNumber;
   double balance;
@@ -14,14 +15,14 @@ abstract class Account{
 /// Class for Savings Account and it inherited Account class
 class SavingsAccount extends Account{
 
-  double interstRate;
+  double interestRate;
 
-  SavingsAccount(super.accountNumber, super.balance, this.interstRate);
+  SavingsAccount(super.accountNumber, super.balance, this.interestRate);
 
   @override
   void withDraw(double amount) {
     balance = balance - amount;
-    balance = balance + balance * interstRate;
+    balance = balance + balance * interestRate;
     print('Your account has been debited $amount 💸');
   }
 }
@@ -46,8 +47,8 @@ class CurrentAccount extends Account{
 
 
 void main(){
-  /// Create an instance of SavingsAccount
 
+  /// Create an instance of SavingsAccount
   SavingsAccount savingsAccount = SavingsAccount(10111213, 10500.50, 0.05);
   print('💵 Your Saving\'s balance : ${savingsAccount.balance} ');
   savingsAccount.deposite(500);
